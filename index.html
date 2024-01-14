@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main h-screen w-screen">
+      <div class="header flex justify-between">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="navbar">
+          <button onclick="showmenu()" id="menubtn" class="sm:hidden"><img  src="./assets/images/icon-menu.svg" alt="icon"></button>
+          <nav>
+            <ul class="sm:flex hidden">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </nav>
+          
+          <button onclick="closemenu()" class="close-btn" id="closebtn"><img src="./assets/images/icon-menu-close.svg" alt="icon"></button>
+          <nav>
+            <ul  id="mobilescreen" class="my-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+
+      <div class="center-div sm:flex mt-3">
+        <div class="left">
+          <img
+            class="w-full h-48 object-cover object-center"
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="image"
+          />
+          <div class="left-content sm:flex justify-between">
+            <h1 class="text-4xl font-bold mt-5">
+              The Bright <br />
+              Future of <br />
+              Web 3.0
+            </h1>
+            <div class="mt-5">
+              <p class="mb-5 text-gray-500">
+                We dive into the next evaluation of the web that <br />claims to
+                put the power of the platforms back <br />into the hands of the
+                people. But is it really <br />fulfilling its promise?
+              </p>
+              <a href="#" class="bg-black text-white pl-3 pr-3 pt-2 pb-2"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="right sm:ml-5 md:p-3 bg-black">
+          <div><h1 class="text-4xl mt-2 text-rose-300">New</h1></div>
+          <div class="mb-5 md:mb-2 border-b-1 border-gray-400">
+            <a
+              class="text-2xl hover:text-rose-300 transition duration-300 text-white"
+              href="#"
+              >Hydrogen vs Electric Cars</a
+            ><br />
+            <p class="text-gray-400">
+              Will hydroge fuled cars ever catch up <br />
+              to EVs?
+            </p>
+          </div>
+          <div class="mb-5">
+            <a
+              class="text-2xl hover:text-rose-300 transition duration-300 text-white"
+              href="#"
+              >The Downside of AI Artistry</a
+            ><br />
+            <p class="text-gray-400">
+              What are the possible adverse effects of <br />
+              on-demand AI image generation?
+            </p>
+          </div>
+          <div>
+            <a
+              class="text-2xl hover:text-rose-300 transition duration-300 text-white"
+              href="#"
+              >Is VC Funding Drying Up?</a
+            ><br />
+            <p class="text-gray-400">
+              Private funding by VC firms is down 50% <br />
+              YOY. We take a look it what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lower-container md:flex pt-8 justify-between">
+        <div class="item flex">
+          <img
+            class="h-32 w-1/3 object-cover object-center"
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="image"
+          />
+          <div class="ml-5">
+            <h1 class="text-2xl font-fold text-gray-300">01</h1>
+            <h1 class="heading font-bold hover:text-rose-300 transition duration-300">Reviving Retro PCs</h1>
+            <p>What happens when old<br/> PCs are given modern upgrades?</p>
+          </div>
+        </div>
+
+        <div class="item flex">
+          <img
+            class="h-32 w-1/3 object-cover object-center"
+            src="./assets/images/image-top-laptops.jpg"
+            alt="image"
+          />
+          <div class="ml-5">
+            <h1 class="text-2xl font-fold text-gray-300">02</h1>
+            <h1 class="heading font-bold hover:text-rose-300 transition duration-300">Top 10 Laptops of 2022</h1>
+            <p>Our best picks for various <br/> needs and budgets.</p>
+          </div>
+        </div>
+
+        <div class="item flex">
+          <img
+            class="h-32 w-1/3 object-cover object-center"
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="image"
+          />
+          <div class="ml-5">
+            <h1 class="text-2xl font-fold text-gray-300">03</h1>
+            <h1 class="heading font-bold hover:text-rose-300 transition duration-300">The Growth of Gaming</h1>
+            <p>How the pandemic has<br/> sparked fresh opportunities.</p>
+          </div>
+        </div>
+
+    </div>
+
+    
+  </body>
+</html>

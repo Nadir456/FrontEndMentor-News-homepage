@@ -1,0 +1,72 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.main{
+    padding: 30px 145px 65px 145px;
+}
+.navbar ul li{
+    margin-left: 30px;
+}
+.navbar ul li a{
+    transition: 0.3s all; font-size: 20px;
+}
+.navbar ul li a:hover{
+    color: #FFABB0;
+}
+.navbar .close-btn{
+    display: none;
+}
+.navbar .my-nav{
+    position: fixed; right: 0; 
+    display: none; background-color: white; z-index: 3;
+    color: black; font-size: 20px; height: 100vh; width: 70%;
+    
+}
+.navbar .my-nav ul{
+    margin-top: 300px;
+}
+.navbar .my-nav ul li{
+     padding-top:20px ; padding-left: 20px; 
+}
+
+
+
+
+
+.center-div .left{
+    
+    width: 70%;
+}
+.center-div .right{
+    
+    width: 30%; 
+}
+.lower-container .heading{
+    cursor: pointer;
+}
+
+@media (max-width:900px){
+    .main{
+        padding: 15px 5px 5px 5px;
+    }
+}
+@media (max-width: 640px) {
+    .main{
+        padding: 15px 5px 5px 5px;
+    }
+    .center-div .left{
+    
+        width: 100%;
+    }
+    .center-div .right{
+    
+        width: 100%; margin-top: 30px; padding: 5px;
+    }
+    .lower-container{
+        display: block; margin-top: 10px;
+    }
+    .lower-container .item{
+        margin-top: 15px; margin-bottom: 5px;
+    }
+
+  }
